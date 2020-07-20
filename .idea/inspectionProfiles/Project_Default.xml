@@ -1,0 +1,33 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="2.7" />
+            <item index="1" class="java.lang.String" itemvalue="3.8" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="10">
+            <item index="0" class="java.lang.String" itemvalue="yolov3-pytorch" />
+            <item index="1" class="java.lang.String" itemvalue="torchivision" />
+            <item index="2" class="java.lang.String" itemvalue="prettytable" />
+            <item index="3" class="java.lang.String" itemvalue="torchsample" />
+            <item index="4" class="java.lang.String" itemvalue="nibabel" />
+            <item index="5" class="java.lang.String" itemvalue="opencv-python" />
+            <item index="6" class="java.lang.String" itemvalue="chumpy" />
+            <item index="7" class="java.lang.String" itemvalue="ntpath" />
+            <item index="8" class="java.lang.String" itemvalue="torch" />
+            <item index="9" class="java.lang.String" itemvalue="neural_renderer_pytorch" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
