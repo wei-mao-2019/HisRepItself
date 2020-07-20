@@ -36,8 +36,8 @@ class Datasets(Dataset):
                     "walkingtogether"]
         else:
             acts = actions
-        subs = np.array([[1], [11], [5]])
-        acts = ['walking']
+        # subs = np.array([[1], [11], [5]])
+        # acts = ['walking']
         # 32 human3.6 joint name:
         joint_name = ["Hips", "RightUpLeg", "RightLeg", "RightFoot", "RightToeBase", "Site", "LeftUpLeg", "LeftLeg",
                       "LeftFoot",

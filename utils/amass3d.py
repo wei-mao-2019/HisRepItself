@@ -38,7 +38,7 @@ class Datasets(Dataset):
             ['BioMotionLab_NTroje'],
         ]
         # amass_splits = [['BioMotionLab_NTroje'], ['HumanEva'], ['SSM_synced']]
-        amass_splits = [['HumanEva'], ['HumanEva'], ['HumanEva']]
+        # amass_splits = [['HumanEva'], ['HumanEva'], ['HumanEva']]
         # amass_splits[0] = list(
         #     set(amass_splits[0]).difference(set(amass_splits[1] + amass_splits[2])))
 

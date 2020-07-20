@@ -45,8 +45,8 @@ class Datasets(Dataset):
                     "walkingtogether"]
         else:
             acts = actions
-        subs = np.array([[1], [11], [5]])
-        acts = ['walking']
+        # subs = np.array([[1], [11], [5]])
+        # acts = ['walking']
 
         subs = subs[split]
 
