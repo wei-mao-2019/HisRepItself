@@ -2,7 +2,7 @@
 This is the code for the paper
 
 Wei Mao, Miaomiao Liu, Mathieu Salzmann. 
-[_History Repeats Itself: Human Motion Prediction via Motion Attention_](https://github.com/wei-mao-2019/HisRepItself). In ECCV 20.
+[_History Repeats Itself: Human Motion Prediction via Motion Attention_](https://arxiv.org/abs/2007.11755). In ECCV 20.
 
 ### Dependencies
 
