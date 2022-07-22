@@ -1,0 +1,21 @@
+{
+    "data_dir": "/home/wei/Documents/",
+    "exp": "main_h36m_3d_v2_in50_out10_ks10_dctn20",
+    "is_eval": false,
+    "ckpt": "checkpoint/main_h36m_3d_v2_in50_out10_ks10_dctn20",
+    "skip_rate": 1,
+    "skip_rate_test": 5,
+    "in_features": 66,
+    "num_stage": 12,
+    "d_model": 256,
+    "kernel_size": 10,
+    "input_n": 50,
+    "output_n": 10,
+    "dct_n": 20,
+    "lr_now": 0.0005,
+    "max_norm": 10000,
+    "epoch": 50,
+    "batch_size": 32,
+    "test_batch_size": 32,
+    "is_load": false
+}

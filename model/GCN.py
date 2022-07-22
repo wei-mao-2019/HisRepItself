@@ -112,7 +112,7 @@ class GCN(nn.Module):
         self.do = nn.Dropout(p_dropout)
         self.act_f = nn.Tanh()
 
-    def forward(self, x):
+    def forward(self, x, is_out_resi=True):
         y = self.gc1(x)
         b, n, f = y.shape
         y = self.bn1(y.view(b, -1)).view(b, n, f)
@@ -123,6 +123,6 @@ class GCN(nn.Module):
             y = self.gcbs[i](y)
 
         y = self.gc7(y)
-        y = y + x
-
+        if is_out_resi:
+            y = y + x
         return y

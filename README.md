@@ -4,6 +4,9 @@ This is the code for the paper
 Wei Mao, Miaomiao Liu, Mathieu Salzmann. 
 [_History Repeats Itself: Human Motion Prediction via Motion Attention_](https://arxiv.org/abs/2007.11755). In ECCV 20.
 
+Wei Mao, Miaomiao Liu, Mathieu Salzmann, Hongdong Li.
+[_Multi-level Motion Attention for Human Motion Prediction_](https://arxiv.org/abs/2106.09300). In IJCV 21.
+
 ### Dependencies
 
 * cuda 10.0
@@ -62,6 +65,23 @@ python main_h36m_ang.py --kernel_size 10 --dct_n 20 --input_n 50 --output_n 10 -
 ```bash
 python main_amass_3d.py --kernel_size 10 --dct_n 35 --input_n 50 --output_n 25 --skip_rate 5 --batch_size 128 --test_batch_size 128 --in_features 54 
 ```
+
+### Training of multi-level attention
+To train joint-level attention
+```bash
+python main_h36m_3d_joints.py --in_features 66 --kernel_size 10 --dct_n 20 --input_n 50 --output_n 10 --skip_rate 1 --batch_size 32 --test_batch_size 32
+```
+To train part-level attention
+```bash
+python main_h36m_3d_parts.py --in_features 66 --kernel_size 10 --dct_n 20 --input_n 50 --output_n 10 --skip_rate 1 --batch_size 32 --test_batch_size 32
+```
+To train post fusion model. (Since the pretrained joint and part-level attantion models exceed the github file limit, we compress the checkpoints.)
+```bash
+python python main_h36m_3d_post_fusion.py --in_features 66 --kernel_size 10 --dct_n 20 --input_n 50 --output_n 10 --skip_rate 1 --batch_size 32 --test_batch_size 32 --epoch 20
+```
+
+
+
 ### Evaluation
 To evaluate the pretrained model,
 ```bash
@@ -84,6 +104,17 @@ If you use our code, please cite our work
   author={Wei, Mao and Miaomiao, Liu and Mathieu, Salzemann},
   booktitle={ECCV},
   year={2020}
+}
+
+@article{mao2021multi,
+  title={Multi-level motion attention for human motion prediction},
+  author={Mao, Wei and Liu, Miaomiao and Salzmann, Mathieu and Li, Hongdong},
+  journal={International Journal of Computer Vision},
+  volume={129},
+  number={9},
+  pages={2513--2535},
+  year={2021},
+  publisher={Springer}
 }
 ```
 
